@@ -1,0 +1,19 @@
+word='"hello" hii how are u'
+print(id(word))
+print(word)
+word="I'am fine thank u"
+print(id(word))
+print(word)
+word='''"hello"
+hii
+how
+are
+u'''
+print(id(word))
+print(word)
+word="""I'am
+fine
+thank
+u"""
+print(id(word))
+print(word)
