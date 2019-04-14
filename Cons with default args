@@ -1,0 +1,17 @@
+class person:
+    def __init__(self,name,age,city,phone_no,email_id):
+        self.name=name
+        self.age=age
+        self.city=city
+        self.phone_no=phone_no
+        self.email_id=email_id
+    def print_details(self):
+            print("name:",self.name)
+            print("age:",self.age)
+            print("city:",self.city)
+            print("email_id:",self.email_id)
+            print("phone_no:",self.phone_no)
+p1=person("shivi",23,"delhi","8794523765","shivi98@gmail.com")
+p2=person("lavi",24,"noida","9873573846","lavi63@gmail.com")
+p1.print_details()
+p2.print_details()
