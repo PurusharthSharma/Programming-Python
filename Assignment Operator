@@ -1,0 +1,6 @@
+a,b=2,3
+print("value of a=",a)
+print("value of b=",b)
+a=b=5
+print("value of a=",a)
+print("value of b=",b)
