@@ -1,0 +1,23 @@
+class employee:
+    company_name="tcs"
+    company_address="delhi"
+    def __init__(self,eid,name,salary):
+        self.eid=eid
+        self.name=name
+        self.salary=salary
+    def print_details(self):
+            print("employee id:",self.eid)
+            print("name:",self.name)
+            print("salary:",self.salary)
+            print("company name:",employee.company_name)
+            print("company address:",self.company_address)
+    def change_company_address(self):
+        employee.company_addresss=input("now address of company:")
+e1=employee("emp101","vijay",24500)
+e2=employee("emp102","manoj",2300)
+e1.print_details()
+e2.print_details()
+e1.change_company_address()
+e1.print_details()
+e2.print_details()
+                
