@@ -1,0 +1,11 @@
+class person:
+    def __init__(self):
+         self.name=input("enter ur name:")
+         self.age=int(input("enter ur age:"))
+    def print_details(self):
+           print("name:",self.name)
+           print("age:",self.age)
+p1=person()
+p2=person()
+p1.print_details()
+p2.print_details()
