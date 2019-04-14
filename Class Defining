@@ -1,0 +1,17 @@
+class perso:
+    def input_details(p):
+        p.name=input("enter your name:")
+        p.age=int(input("enter your age:"))
+    def print_details(p):
+            print("name:",p.name)
+            print("age:",p.age)
+p1=person()
+p1.input_details()
+p2=person()
+p2.input_details()
+p3=person()
+p3.input_details()
+p1.print_details()
+p2.print_details()
+p3.print_details()
+       
