@@ -1,0 +1,7 @@
+numbers=tuple(range(1,14,4))
+print(numbers)
+print(len(numbers))
+print(min(numbers))
+print(max(numbers))
+print(sum(numbers))
+ 
