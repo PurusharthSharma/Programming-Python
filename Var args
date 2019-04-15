@@ -1,0 +1,6 @@
+def display(*args):
+    for arg in args:
+     print(arg,end=" ")
+    print()
+display("hello","hii","how","are","u")
+display(10,20,30)
