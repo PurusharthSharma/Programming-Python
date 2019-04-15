@@ -1,0 +1,13 @@
+numbers=[12,34,45,56,67,78,23,45,89]
+print(numbers[3:5])
+print(numbers[1:8:2])
+print(numbers[:8:2])
+print(numbers[-6:-1])
+print(numbers[:-7:-2])
+print(numbers[::3])
+print(numbers[::-4])
+print(numbers[3::])
+print(numbers[::-3])
+print(numbers[-2::-2])
+print(numbers[-7:])
+print(numbers[2::4])
