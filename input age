@@ -1,0 +1,6 @@
+age=int(input("enter your age:"))
+if age>1 and age <=100:
+ if   age>=18:
+    print("you are an adult")
+ else:print("you are not an adult")
+else:print("invalid age entered")
