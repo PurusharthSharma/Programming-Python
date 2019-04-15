@@ -1,0 +1,12 @@
+a=2
+print(a)
+print(id(a))
+a=5
+print(a)
+print(id(a))
+word='hello'
+print(word)
+print(id(word))
+word="hii"
+print(word)
+print(id(word))
