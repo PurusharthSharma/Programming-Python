@@ -1,0 +1,6 @@
+numbers=list(range(1,10,2))
+print(numbers)
+print("maximum number:",max(numbers))
+print("minimum numbers:",min(numbers))
+print("length:",len(numbers))
+print("sum of numbers:",sum(numbers))
