@@ -1,0 +1,5 @@
+numbers=(23,55,66,12,9,3,87,89)
+print(numbers[3:6])
+print(numbers[1:8:2])
+print(numbers[:7:3])
+print(numbers[::5])
