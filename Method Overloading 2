@@ -1,0 +1,8 @@
+def add(n1,n2,n3=None):
+    if n3 is not None:
+        return n1+n2+n3
+    else:
+        return n1+n2
+
+print(add(10,20))
+print(add(10,20,30))
