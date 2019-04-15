@@ -1,0 +1,17 @@
+class complex_number:
+    def __init__(self,real=0,img=0):
+        self.real=real
+        self.img=img
+    def print_complex_number(self):
+        print(self.real,"+i",self.img)
+    def addition(self,other):
+        new=complex_number()
+        new.real=self.real+other.real
+        new.img=self.img+other.img
+        return new
+c1=complex_number(5,6)
+c2=complex_number(7,6)
+c3=c1.addition(c2)
+c1.print_complex_number()
+c2.print_complex_number()
+c3.print_complex_number()
