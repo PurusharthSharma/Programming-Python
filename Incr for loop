@@ -1,0 +1,3 @@
+for number in range(2,66,4):
+  print(number,end=" ")
+print(number)
