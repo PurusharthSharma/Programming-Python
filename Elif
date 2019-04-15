@@ -1,0 +1,7 @@
+n=int(input("enter a number:"))
+if n<6:
+    print(n,"is less than 6")
+elif n>6:
+    print(n,"is greater than 6")
+else:
+    print(n,"is equal to 6")
