@@ -1,0 +1,5 @@
+from tkinter import *
+window=Tk()
+window.title("adding labels")
+window.geometry("")
+window.mainloop()
