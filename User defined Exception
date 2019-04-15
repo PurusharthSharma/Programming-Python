@@ -1,0 +1,17 @@
+class InvalidAgeError(Exception):
+    def __init__(self,message):
+      Exception. __init__(self,message)
+
+class Student:
+    def __init__(self,age):
+      if age>=1 and age<=100:
+        self.age=age
+      else:
+        raise InvalidAgeError("Invalid Age")
+    def get_age(self):
+      return self.age
+try:
+    s= Student(int(input("Enter your age:")))
+    print("Age:",s.get_age())
+except Exception as e:
+    print(e)
