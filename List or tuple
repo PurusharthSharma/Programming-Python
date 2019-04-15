@@ -1,0 +1,6 @@
+list1=[45,89,76,23,12]
+print(list1)
+tuple1=tuple(list1)
+print(tuple1)
+list2=list(tuple1)
+print(list1)
