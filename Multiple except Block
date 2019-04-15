@@ -1,0 +1,12 @@
+try:
+    n1=int(input("Enter the First number:"))
+    n2=int(input("Enter the second number:"))
+    s=n1/n2
+    print("Division",s)
+except ValueError:
+          print("Number should be in integer")
+except ZeroDivisionError:
+          print("Number can not be divide by Zero")
+except Exception:
+          print("Something went wrong")
+print("Hello")
