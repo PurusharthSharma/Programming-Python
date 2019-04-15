@@ -1,0 +1,8 @@
+list1=[ 1,2,3,4,5]
+list2=[34,89,77,56,45,12,33,90]
+list3=list1+list2
+list4=[2]*5
+print(list1)
+print(list2)
+print(list3)
+print(list4)
