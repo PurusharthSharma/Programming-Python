@@ -1,0 +1,9 @@
+from tkinter import*
+from tkinter.ttk import*
+window = Tk()
+window.title("Labels")
+label1 =Label(window, text="Welcome to Python Gui")
+label1.pack()
+label2 = Label(window, text="This is my First Python Window")
+label2.pack()
+window.mainloop()
