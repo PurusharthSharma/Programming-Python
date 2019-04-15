@@ -1,0 +1,9 @@
+a=14
+b=6.8
+c="hello"
+print(a)
+print(type(a))
+print(b)
+print(type(b))
+print(c)
+print(type(c))
