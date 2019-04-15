@@ -1,0 +1,17 @@
+class person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def print_person_details(self):
+            print("name:",self.name)
+            print("age:",self.age)
+class student(person):
+    def __init__(self,name,age,roll_no):
+        person.__init__(self,name,age)
+        self.roll_no=roll_no
+    def print_students_details(self):
+            print("rollnumber:",self.roll_no)
+s=student("lavi",23,101)
+s.print_person_details()
+s.print_students_details()
+                        
