@@ -1,0 +1,8 @@
+try:
+    n1=int(input("enter first no:"))
+    n2=int(input("enter second no:"))
+    d=n1/n2
+    print(d)
+except exception as e:
+    print(e)
+    print("hello")
