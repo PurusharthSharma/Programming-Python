@@ -1,0 +1,5 @@
+numbers=12,67,89,33,45,78
+print(min(numbers))
+print(max(numbers))
+print(len(numbers))
+print(sum(numbers))
