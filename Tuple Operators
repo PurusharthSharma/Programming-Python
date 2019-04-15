@@ -1,0 +1,11 @@
+tuple1=(45,89,76,44)
+tuple2=(55,99,77,33)
+print(type(tuple1))
+print(tuple1)
+print(tuple2)
+tuple3=tuple1+tuple2
+print(tuple3)
+tuple4=(3,)*4
+print(tuple4)
+print(3 in tuple1)
+print(98 not in tuple2) 
