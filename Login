@@ -1,0 +1,27 @@
+from tkinter import *
+from tkinter.ttk import *
+from tkinter.messagebox import *
+class LoginWindow(Tk):
+    def __init__(self,*args,**kwargs):
+        Tk.__init__(self,*args,**kwargs)
+        self.title("my contact book")
+        self.geometry("400*300")
+        self.style=style()
+        self.style.configure('header.Tframe',background='blue')
+        self.header_frame=frame(self,style='header.tframe')
+        self.header-frame.pack(side=top,fill=x)
+        self.style.configure('header.Tlabel',background='blue',foreground='white',font=(none,20))
+self.header-label=Label(self.header-frame,text="login",style=header.Tlabel)
+self.header-label.pack(pady=10)
+self.style.configure('content.Tframe',background='white')
+self.content_frame=frame(self,style='content.Tframe')
+self.content-frame.pack(side=top,fill=both,expand=TRUE)
+self.style.configure('Login.Tframe',background='white')
+self.login_frame=frame(self.content_frame,style='login.Tframe',height=200,width=200)
+self.login_frame.place(relx=.5,rely=.5,anchor=center)
+self.style.configure('Login.Tlabel',background='white',font=(none,15))
+self.username_label=Label(self.login_frame,text="username:",style='Login.Tlabel')
+self.username_label.grid(row=0,column=0,pady=10)
+con.close()
+login_window=LoginWindow()
+login_window.mainloop()
