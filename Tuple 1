@@ -1,0 +1,11 @@
+tuple1=(1,2,3,4,5)
+tuple2=46.3,54.6,7.8
+tuple3=('hello',45,False)
+print(tuple1)
+print(tuple2)
+print(type(tuple2))
+print(tuple3)
+a,b,c=(12,7,67)
+print(a)
+print(b)
+print(c)
