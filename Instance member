@@ -1,0 +1,18 @@
+class person:
+    def __init__(self,name,age,city):
+        self.name=name
+        self.age=age
+        self.city=city
+    def print_details(self):
+            print("name:",self.name)
+            print("age:",self.age)
+            print("city:",self.city)
+    def change_city(self):
+            self.city=input("enter your new :")
+p1=person("vijay",23,"noida")
+p2=person("mahima",21,"delhi")
+p1.print_details()
+p2.print_details()
+p1.change_city()
+p1.print_details()
+p2.print_details()
