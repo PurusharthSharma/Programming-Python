@@ -1,0 +1,38 @@
+class Person():
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def print_person_details(self):
+        print("Name:",self.name)
+        print("Age:",self.age)
+
+
+class Student(Person):
+    def __init__(self,name,age,roll_number):
+        Person.__init__(self,name,age)
+        self.roll_number=roll_number
+
+    def print_student_details(self):
+        print("Roll_number:",self.roll_number)
+
+
+class Result(Student):
+    def __init__(self,name,age,roll_number,marks1,marks2,marks3):
+        Student.__init__(self,name,age,roll_number)
+        self.marks1=marks1
+        self.marks2=marks2
+        self.marks3=marks3
+
+
+    def print_result_details(self):
+        total=self.marks1+self.marks2+self.marks3
+        percentage=total/3
+        print("Total:",total)
+        print("Percentage:",percentage)
+
+
+r=Result("Shiva",20,82,82,90,92)
+r.print_person_details()
+r.print_student_details()
+r.print_result_details()
