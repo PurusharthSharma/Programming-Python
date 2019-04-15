@@ -1,0 +1,8 @@
+a=2
+print(a)
+def display():
+    b=3
+    print(a)
+    print(b)
+display()
+print(a)
