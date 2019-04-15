@@ -1,0 +1,5 @@
+word="hello"
+print(len(word))
+print(min(word))
+print(max(word))
+print(str(45))
