@@ -1,0 +1,3 @@
+numbers=[12,2,43,87,23]
+for number in numbers:
+    print(number)
