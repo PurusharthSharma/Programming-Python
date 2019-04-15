@@ -1,0 +1,615 @@
+def first_click():
+    print('\n\n\n')
+    print('{:^140s}'.format(">>> Enter 'A' for about"))
+    print('{:^140s}'.format(">>> Enter 'S' to start the game"))
+    print('{:^140s}'.format(">>> Press 'I' for the instructions of the game"))
+    print('{:^140s}'.format(">>> Press 'Q' to quit the game"))
+    print('{:^140s}'.format(">>> Press 'H' for help "))
+
+    choice=input('{:^140s}'.format('Enter Your Choice---'))
+
+    if(choice=='A'):
+        about()
+        print('')
+        print('{:^140}'.format('---Want To Start Game---'))
+        choice2=input('{:^140}'.format('---Y for Yes and N for No---'))
+        if(choice2=='Y'):
+            first_click()
+        else:
+            quit()
+    elif(choice=='H'):
+        Help()
+        print('')
+        print('{:^140}'.format('---Want To Start Game---'))
+        choice2=input('{:^140}'.format('---Y for Yes and N for No---'))
+        if(choice2=='Y'):
+            first_click()
+        else:
+            quit()  
+    elif(choice=='I'):
+        inst()
+        print('')
+        print('{:^140}'.format('---Want To Start Game---'))
+        choice2=input('{:^140}'.format('---Y for Yes and N for No---'))
+        if(choice2=='Y'):
+            first_click()
+        else:
+            quit()
+    elif (choice=='S'):
+        entry_page()
+    elif(choice=='Q'):
+        exit()
+
+    if(choice!='A' or choice!='H' or choice!='S' or choice!='Q'):
+        print('\n\n\n')
+        print('{:^140}'.format('Please enter an appropriate choice!!!'))
+        first_click() 
+
+#This is the 1st Page---------------------
+
+def first_page():
+    print('\n\n\n')
+    print('{:^150s}'.format("------------------------------------------------------------------------------"))
+    print('{:^150s}'.format("--------------------------------Welcome---------------------------------------"))
+    print('{:^150s}'.format("----------------------------------To------------------------------------------"))
+    print('{:^150s}'.format("-------------------------------QUiz Game--------------------------------------"))
+    print('{:^150s}'.format("------------------------------------------------------------------------------"))
+    print('\n\n\n')
+    
+    input('')
+    print('{:^150}'.format('Before you start the game....Please read the instructions!!!!!!!'))
+    input('')
+    first_click()
+   
+    
+#Score_function of the game----------------------------------------------------
+score=[]
+def listo():
+    score.append(1)
+    
+    
+    
+#Questions of each sections are here--------------------------------------------
+def sporto_ques():
+    
+#Question number 1--------------------------------------------------------------
+    input('')    
+    print('{:^140}'.format('Question 1.The only Indian cricketer of the country to feature in the top 10 of the ICC Player Ranking for ODIs on May 2017?'))
+    print('{:^140}'.format('A.Virat Kohli \t B.Shikhar Dhawan \t C.Rohit Sharma \t D.None of these\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='A'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is A.Virat Kohli'))
+    print('\n\n')   
+#Question number 2--------------------------------------------------------------- 
+    input('')    
+    print('{:^140}'.format('Question 2.First Indian women Olympic Medal winner is?'))
+    print('{:^140}'.format('A.Saina Nehwal \t B.Mary Kom \t C.Karnam Malleshwari \t D.Shakshi Malik\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='C'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is  C. Karnam Malleshwari'))
+    print('\n\n')
+#Question number 3--------------------------------------------------------------
+    input('')     
+    print('{:^140}'.format('Question 3.The term \'Whitewash\' is associated with which game?'))
+    print('{:^140}'.format('A.Football \t B. Hockey \t C.Cricket \t D.Tennis\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='C'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is C.Cricket'))
+    print('\n\n')
+#Question number 4--------------------------------------------------------------
+    input('')
+    print('{:^140}'.format('Question 4. President of the International Olympic Committee is elected for a term of?'))
+    print('{:^140}'.format('A.5years \t B.6 years \t C.8 years \t D.10 years\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='B'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is B. 6 years'))
+    print('\n\n')
+#Question number 5-----------------------------------------------------------------
+    input('')
+    print('{:^140}'.format('Question 5.The term Grand Slam is associated with?'))
+    print('{:^140}'.format('A.Badminton \t B. Hockey \t C.Cricket \t D.Lawn Tennis\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='D'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is D.Lawn Tennis'))
+    print('\n\n')
+      
+#Question number 6-----------------------------------------------------------------
+    input('')
+    print('{:^140}'.format('Question 6.The distance covered in half Marathon is approximately?'))
+    print('{:^140}'.format('A.21 km \t B.42km \t C.11 km \t D.5km\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='A'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is A. 21km'))
+    print('\n\n')
+
+#Question number 7-----------------------------------------------------------------
+    input('')
+    print('{:^140}'.format('Question 7.The number of players on each side in baseball is?'))
+    print('{:^140}'.format('A.11 \t B. 14 \t C.9 \t D.10\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='C'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is C'))
+    print('\n\n')
+
+#Question number 8-----------------------------------------------------------------
+    input('')
+    print('{:^140}'.format('Question 8.Which country led a boycott of the 1980 Olympic Games held in Moscow?'))
+    print('{:^140}'.format('A.Great Britain \t B. India \t C.USA \t D.South Korea\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='C'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is C.USA'))
+    print('\n\n')
+
+#Question number 9-----------------------------------------------------------------
+    input('')
+    print('{:^140}'.format('Question 9.\'Ryder Cup\' is awarded to the players of?'))
+    print('{:^140}'.format('A.Golf \t B. Hockey \t C.Cricket \t D.Tennis\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='A'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is A.Golf'))
+    print('\n\n')
+
+#Question number 10-----------------------------------------------------------------
+    input('')     
+    print('{:^140}'.format('Question 10.Who won the last FIFA Ballon d\'or award?'))
+    print('{:^140}'.format('A.Ronaldinho \t B. Cristiano Ronaldo \t C.Lionel Messi \t D.Gareth Bale\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='B'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is B. Cristiano Ronaldo'))
+    print('\n\n')
+    input('')
+    print('\n\n\n')
+#Ending message-----------------------------------------------------------------------
+    print('{:^140}'.format('Well played contestant!!!!!!!'))
+    print('{:^140}'.format('Now its time to see how much you score!!!!'))
+    print('\n\n\n')
+    print('')
+    pre_score=(len(score))
+    final_score=('{:^140}'.format('So your total score is '+str(pre_score) +'0%'))
+    print('{:^140}'.format(final_score))
+    file= open('C:\\Users\\Ayush\\Desktop\\Player Profile.txt','w')
+    file.write('\nYour Score of Sports sections is ')
+    file.write('\n\n')
+    file.write(final_score) 
+    #file.close()
+    print('\n\n\n')
+    print('{:^140}'.format('Do you want to play it again!!!'))
+    choice2=input('{:^140}'.format('---Y for Yes and N for No---'))
+    if(choice2=='Y'):
+        first_click()
+    else:
+        quit()
+    
+
+    
+    
+    
+#----------------------------------------------------------------------------------------------------------------------------------------    
+
+
+def gene_ques():
+    input('')
+#Question number 1--------------------------------------------------------------    
+    print('{:^140}'.format('Question 1.Which of the following is a Palindrome number?'))
+    print('{:^140}'.format('A.42042 \t B.101010 \t C.23232 \t D.01234\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='C'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is C.23232'))
+    print('\n\n')    
+#Question number 2---------------------------------------------------------------     
+    print('{:^140}'.format('Question 2.The country with the highest environmental performance index is...'))
+    print('{:^140}'.format('A.France \t B.Denmark \t C.Switzerland \t D.Finland\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='C'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is C.Switzerland'))
+    print('\n\n')
+#Question number 3--------------------------------------------------------------     
+    print('{:^140}'.format('Question 3.Which animal laughs like human being?'))
+    print('{:^140}'.format('A.Polar Bear \t B.Hyena \t C.Donkey \t D.Chimpanzee\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='B'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is B.Hyena'))
+    print('\n\n')
+#Question number 4--------------------------------------------------------------
+    print('{:^140}'.format('Question 4.The currency of the \'Maldives\' is ?'))
+    print('{:^140}'.format('A.Riyal \t B.Rupees \t C.Rufiyaa \t D.Dolla\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='C'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is C.Rufiyaa'))
+    print('\n\n')
+#Question number 5-----------------------------------------------------------------
+    print('{:^140}'.format('Question 5.Who is the first woman to head a public sector bank?'))
+    print('{:^140}'.format('A.Shikha Sharma \t B.Usha Ananthasubramanyan \t C.Chanda Kochar \t D.Arundhati Bhattacharya\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='D'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is D.Arundhati Bhattacharya'))
+    print('\n\n')   
+
+#Question number 6-----------------------------------------------------------------
+    print('{:^140}'.format('Question 6.World Tourism Day is celebrated on?'))
+    print('{:^140}'.format('A.September 12 \t B.September 25 \t C.September 27 \t D.September 29\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='C'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is C.September 27'))
+    print('\n\n')
+
+#Question number 7-----------------------------------------------------------------
+    print('{:^140}'.format('Question 7.Where is Bose Institute ?'))
+    print('{:^140}'.format('A.Dispur \t B.Kolkata \t C.Mumbai \t D.New Delhi\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='B'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is B.Kolkata'))
+    print('\n\n')
+    
+#Question number 8-----------------------------------------------------------------        
+    print('{:^140}'.format('Question 8.When is the International Yoga Day celebrated ?'))
+    print('{:^140}'.format('A.June 21 \t B.March 21 \t C.April 22 \t D.May 31\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='A'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is A.June 21'))
+    print('\n\n')
+
+#Question number 9------------------------------------------------------------------
+    print('{:^140}'.format('Question 9.First Man on Moon?'))
+    print('{:^140}'.format('A. Neil Armstrong \t B.Rakesh Sharma \t C.Kalpana Chawla \t D.Mark Waltney'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='A'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is A.Neil Armstrong'))
+    print('\n\n')
+
+#Question number 10----------------------------------------------------------------        
+    print('{:^140}'.format('Question 10.Name of last part of Harry Potter?'))
+    print('{:^140}'.format('A.Goblet of fire \t B.Deadly Hollow \t C.Prisoner of Askabaan \t D.Half Blood Prince'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='B'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is B. Deadly Hollows'))
+    print('\n\n')
+    
+#Ending message-----------------------------------------------------------------------
+    print('{:^140}'.format('Well played contestant!!!!!!!'))
+    print('{:^140}'.format('Now its time to see how much you score!!!!'))
+    print('\n\n\n')
+    print('')
+    pre_score=(len(score))
+    final_score=('{:^140}'.format('So your total score is '+str(pre_score) +'0%'))
+    print('{:^140}'.format(final_score))
+    file= open('C:\\Users\\Ayush\\Desktop\\Player Profile.txt','w')
+    file.write(final_score) 
+    #file.close()
+    print('\n\n\n')
+    print('{:^140}'.format('Do you want to play it again!!!'))
+    choice2=input('{:^140}'.format('---Y for Yes and N for No---'))
+    if(choice2=='Y'):
+        first_click()
+    else:
+        quit()
+    
+    
+    
+def sci_ques():
+    input('')
+#Question number 1--------------------------------------------------------------    
+    print('{:^140}'.format('Question 1.Which country in the world has maximum number of robots working?'))
+    print('{:^140}'.format('A.India \t B.Japan \t C.USA \t D.Germany\n'))
+    ans1=input('{:^140}'.format('Enter your option---'))
+    if(ans1=='B'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong Answer!!!! \t Correct answer is Japan'))
+    print('\n\n')
+    
+        
+#Question number 2---------------------------------------------------------------     
+    print('{:^140}'.format('Question 2. How often, approximately, is Halley\'s Comet visible from Earth (in years)?'))
+    print('{:^140}'.format('A.20 years \t B.10 years \t C.75 years \t D.50 years\n'))
+    ans2=input('{:^140}'.format('Enter your option'))
+    if(ans2=='C'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong answer!!!! Correct answer is 75 Years.'))
+    print('\n\n')
+    
+    
+#Question number 3--------------------------------------------------------------     
+    print('{:^140}'.format('Question 3. Which is the India`s first scientific satellite?'))
+    print('{:^140}'.format('A.Mangalyaan \t  B.GSAT-6A \t C.Aryabhatt \t D.GSAT-5A\n'))
+    ans1=input('{:^140}'.format('Enter your option'))
+    if(ans1=='C'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong answer!!!! Correct answer is Aryabhatt.'))   
+    print('\n\n')
+
+    
+#Question number 4---------------------------------------------------------------
+    print('{:^140}'.format('Question 4. Who constructed the Jantar Mantar in Jaipur?'))
+    print('{:^140}'.format('A.Ram Singh \t B.Man Singh 1st \t C.Rana Singh \t D.Jai Singh 2nd\n'))
+    ans1=input('{:^140}'.format('Enter your option'))
+    if(ans1=='D'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong answer!!!! Correct answer is Ram Singh 2nd.'))
+
+
+#Question number 5----------------------------------------------------------------
+    print('{:^140}'.format('Question 5. Who is known as the father of Indian Nuclear programme? '))
+    print('{:^140}'.format('A.APJ Abdul Kalam \t B.Raja Ramanna \t C.Homi J Bhabha \t D.Vikram Sarabhai\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='C'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is C. Homi J Bhabha'))
+    print('\n\n')
+
+#Question number 6----------------------------------------------------------------
+    print('{:^140}'.format('Question 6. What is the name of the first nuclear test conducted by India ?'))
+    print('{:^140}'.format('A.Nucleyo Head \t B.Big Boy \t C.Big Blower \t D.Smiling Buddha\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='D'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong!!! The correct answer is D. Smiling Buddha'))
+    print('\n\n')
+
+#Question number 7----------------------------------------------------------------
+    print('{:^140}'.format('Question 7. The branch of physics that deals with the motion of a very small particle is called?'))
+    print('{:^140}'.format('A.Field Theory \t B.Particle Physics \t C.Quantum Mechanics \t D.Atomic Physics\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='C'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong !!! The correct answer is C.Quantum Mechanics'))
+    print('\n\n')
+
+#Question number 8----------------------------------------------------------------
+    print('{:^140}'.format('Question 8. Which of the following is the largest air pollutant?'))
+    print('{:^140}'.format('A.Carbon dioxide \t B.Carbon monoxide \t C.Sulphur dioxide \t D.Hydrocarbons\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='B'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong !!! The correct answer is B.Carbon Monoxide'))
+    print('\n\n')
+
+#Question number 9----------------------------------------------------------------
+    print('{:^140}'.format('Question 9. Who invented Telegraph?'))
+    print('{:^140}'.format('A.Samuel Morse \t B.Edward Jenner \t C.Alexander Graham Bell \t D.Marcony\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='A'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong !!! The correct answer is A.Samuel Morse'))
+    print('\n\n')
+
+#Question number 10---------------------------------------------------------------                
+    print('{:^140}'.format('Question 10. Who is the founder of Tesla Motors?'))
+    print('{:^140}'.format('A.Steve Jobs \t B.Elon Mask \t C.Bill Gates \t D.Mark Zuckerburg\n'))
+    ans1=input('{:^140}'.format('Enter your option number'))
+    if(ans1=='B'):
+        print('{:^140}'.format('Correct answer!!!!!'))
+        listo()
+    else:
+        print('{:^140}'.format('Wrong !!! The correct answer is B.Elon Mask'))
+    print('\n\n')
+    
+#Ending message-----------------------------------------------------------------------
+    print('{:^140}'.format('Well played contestant!!!!!!!'))
+    print('{:^140}'.format('Now its time to see how much you score!!!!'))
+    print('\n\n\n')
+    print('')
+    pre_score=(len(score))
+    final_score=('{:^140}'.format('So your total score is '+str(pre_score) +'0%'))
+    print('{:^140}'.format(final_score))
+    file= open('C:\\Users\\Ayush\\Desktop\\Player Profile.txt','w')
+    file.write('\n\n')
+    file.write(final_score) 
+    #file.close()
+    print('\n\n\n')
+    print('{:^140}'.format('Do you want to play it again!!!'))
+    choice2=input('{:^140}'.format('---Y for Yes and N for No---'))
+    if(choice2=='Y'):
+        first_click()
+    else:
+        quit()    
+    
+    
+           
+def General_section():
+    print('\n\n\n')
+    print('{:^140}'.format('Welcome to the General Knowledge Section!!!!!!!'))
+    print('{:^140}'.format('You choose General Knowledge Section!!!!! You must be a GK lover!!!!!'))
+    print('{:^140}'.format('Now its time to find some answers !!!!!!!'))
+    print('{:^140}'.format('Best Of Luck And Enjoy!!!!!!!'))
+    print('\n\n\n')
+    
+    gene_ques()
+       
+    
+
+def Sports_section():
+    print('\n\n\n')
+    print('{:^140}'.format('Welcome to the Sports Section!!!!!!!'))
+    print('{:^140}'.format('You choose Sports Section!!!!!! You must be a Sports lover!!!!'))
+    print('{:^140}'.format('Now its time to face some questions !!!!!!!'))
+    print('{:^140}'.format('Best Of Luck And Enjoy!!!!!!!'))
+    print('\n\n\n')
+    
+    sporto_ques() 
+
+
+
+def Science_section():
+    print('\n\n\n')
+    print('{:^140}'.format('Welcome to the Science Section!!!!!!!'))
+    print('{:^140}'.format('You choose Science Section!!!!!! You must be a science lover!!!!'))
+    print('{:^140}'.format('Okay Now lets boombard the question on you !!!!!!!'))
+    print('{:^140}'.format('Best Of Luck And Enjoy!!!!!!!'))
+    print('\n\n\n')
+    sci_ques()
+    
+
+
+def game_sections():
+    print('\n\n\n')
+    print('{:^140}'.format('From Here You Have To Choose One Section'))
+    print('{:^140}'.format('Choose wisely coz all the questions are from that section'))
+    print('\n\n\n')
+    print('{:^140}'.format('1.Science And Technology'))
+    print('{:^140}'.format('2.Sports and Games'))
+    print('{:^140}'.format('3.General knowledge'))
+    print('{:^140}'.format('Good Luck!!!!!'))
+    print('\n\n\n')
+    choice=input('{:^140}'.format('---Choose from above sections---'))
+    if(choice=='1'):
+        Science_section()
+    elif(choice=='2'):
+        Sports_section()
+    elif(choice=='3'):
+        General_section()    
+        
+        
+
+def about():
+    print('\n\n\n\n')
+    print('{:^150s}'.format("Welocome the Quiz Game"))
+    print('{:^150s}'.format("This game is for those who wants to increase a little bit of their general knowledge"))
+    print('{:^150s}'.format("So lets begin with some introduction of mine"))
+    print('{:^150s}'.format("I am Ayush, Someone challenged me that I can never create a quiz game so I accepted that challenge"))
+    print('{:^150s}'.format("And right now I am just trying to make this chunk possible although my summer holidays are going on"))
+    print('{:^150s}'.format("I dont have any kind of grudge I just wanna prove myself in front of me"))
+    print('{:^150s}'.format("That the from point where I get all my inspiration"))
+    print('{:^150s}'.format("So Lets begin thedevelopment of the game,Hope I will succeed in this before the end of my summer vacations"))
+    
+#About Function Till Here-----------------------------------------
+
+
+
+def Help():
+    print('\n\n\n\n')
+    print('{:^150s}'.format('-----Welcome To The Help Section-----'))
+    print('\n\n\n')
+    print('{:^150s}'.format('We Are Always Here To Help You!!!!'))
+    print('{:^150s}'.format('This is a general knowledge quiz game'))
+    print('{:^150s}'.format('All you need is just to select a section from the front page and answer the questions'))
+    print('{:^150s}'.format('After some questions,Result will be displayed and displays the score'))
+    print('{:^150s}'.format('Best of Luck!!!!!!'))
+    print('{:^150s}'.format('Hope, You will have a great experience '))
+
+
+    print('\n\n\n')
+    print('{:>120s}'.format('Regards-------'))
+    print('{:>120s}'.format('Developer Team'))
+
+#Help Function Till Here--------------------------
+
+
+
+def inst():
+    print('\n\n\n')
+    print('{:^150}'.format('-----Welcome to the Instructions page-----'))
+    print('\n\n\n')
+    print('{:^150}'.format('Warning Contestent!!!!!'))
+    print('{:^150}'.format('While you are playing this game!!!!'))
+    print('{:^150}'.format('You have to answer in a correct manner!!!'))
+    print('{:^150}'.format('ALl the options/choices should be in capital letters!!!!!!!'))
+    print('{:^150}'.format('Enjoy the game!!!!!'))
+#This is the End of Instructions Function-----------------------
+
+
+
+def entry_page():
+    print('\n\n\n')
+    contestent_name=input('{:^140s}'.format('Enter Your Name------'))
+    if(contestent_name==''):
+        print('\n\n')
+        print('{:^140}'.format('Please enter your name!!!!!'))
+        entry_page()
+    file= open('C:\\Users\\Ayush\\Desktop\\Player Profile.txt','w')
+    file.write('Contestent Name is')
+    file.write('\n\n\t')
+    file.write(contestent_name)
+    file.write('\n\n')
+    #file.close()
+    game_sections()
+    
+    
+    
+    #file=open('Plyaer Profile.txt','r')      #this is used to display the content of the file.
+    #print(file.read())                       #Right now we dont need------
+    #file.close()
+    
+    
+#THis is the end of the entry page--------------------
+
+
+#From here the Game starts-------seems ironical but it is true-------    
+first_page()
