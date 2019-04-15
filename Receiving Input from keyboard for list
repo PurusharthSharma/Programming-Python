@@ -1,0 +1,6 @@
+n=int(input("Enter how many numbers youwant to store:"))
+numbers=[]
+for i in range(1,n+1):
+    numbers.append(int(input("Enter a number:")))
+print("Entered numbers are")
+print(numbers)
