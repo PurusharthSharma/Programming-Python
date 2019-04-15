@@ -1,0 +1,35 @@
+class Person():
+    def __init__(self,name,age):
+        self.name= name
+        self.age= age
+
+    def print_person_details(self):
+        print("Name:",self.name)
+        print("Age:",self.age)
+
+class Student(Person):
+    def __init__(self,name,age,roll_number):
+        Person.__init__(self,name,age)
+        self.roll_number=roll_number
+
+    def print_student_details(self):
+        print("Roll_number:",self.roll_number)
+
+class Employee(Person):
+    def __init__(self,name,age,employee_id,salary):
+        Person.__init__(self,name,age)
+        self.employee_id=employee_id
+        self.salary=salary
+
+    def print_employee_details(self):
+        print("Employee_id:",self.employee_id)
+        print("Salary:",self.salary)
+print("Student details are:")
+s=Student("Lavi",22,80)
+s.print_person_details()
+s.print_student_details()
+
+print("\nEmployee details are:")
+e=Employee("shiva",20,101,45000)
+e.print_person_details()
+e.print_employee_details()
