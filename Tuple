@@ -1,0 +1,8 @@
+tuple1=(2,56,98,66,32)
+tuple2=45,76,99,23,11
+tuple3=tuple1+tuple2
+tuple4=(4,)*5
+print(tuple1)
+print(tuple2)
+print(tuple3)
+print(tuple4)
