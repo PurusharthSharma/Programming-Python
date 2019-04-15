@@ -1,0 +1,6 @@
+numbers=[12,2,23]
+print(numbers)
+print(id(numbers))
+numbers[1]=45
+print(numbers)
+print(id(numbers))
