@@ -1,0 +1,9 @@
+list1=[12,56,78]
+list2=[45,67,89]
+list3=list1+list2
+print(list3)
+list4=["Hello"]*5
+print(list4)
+print(12 in list1)
+print(45 not in list2)
+print(67 in list2)
