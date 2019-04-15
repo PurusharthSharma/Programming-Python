@@ -1,0 +1,13 @@
+n=int(input("enter a number:"))
+if n%3==0:
+ if n%5==0:
+    print(n,"is divisible by both 3 and 5") 
+ else:
+    print(n,"is divisible by 3 but not by 5")
+else:
+ if n%5==0:
+    print(n,"is not divisible by 3 but div by 5")
+
+ else:  print(n,"is not divisible by 3 nor by 5")                 
+    
+    
