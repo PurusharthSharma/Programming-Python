@@ -1,0 +1,9 @@
+list1=[23,89,78,56,77]
+list2=[45.4,78.9,34.6,77.9]
+list3=['Hello','hi','how','are','u']
+list4=[23,"Hello",34.8,True]
+print(type(list1))
+print(list1)
+print(list2)
+print(list3)
+print(list4)
