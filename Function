@@ -1,0 +1,14 @@
+def print_messages():
+
+    print("hello")
+    print("hi")
+    print("bye")
+
+print_messages()
+print_messages()
+print("welcome")
+print_messages()
+print("incapp")
+print_messages()
+print_messages()
+print_messages()
