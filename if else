@@ -1,0 +1,5 @@
+n=int(input("enter a number:"))
+if n<4:
+    print(n,"is less than 6")
+else:
+    print(n,"is not less than 6")
