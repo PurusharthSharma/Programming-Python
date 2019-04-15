@@ -1,0 +1,7 @@
+def display(name,age):
+    print("name:",name)
+    print("age:",age)
+display("raj",23)
+display(23,"vijay")
+display(age=21,name="manoj")
+    
